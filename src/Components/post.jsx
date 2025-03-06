@@ -1,11 +1,12 @@
 import React from 'react'
 import'./Styles/styles.css'
 
-export default function post() {
+export default function post({title , body , children}) {
   return (
     <div className={"post"}>
-        <h3>This is post title</h3>
-        <p>This is post body</p>
+        {children}
+        <h3>{title}</h3>
+        <p>{body}</p>
     </div>
   )
 }
